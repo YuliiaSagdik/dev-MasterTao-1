@@ -1,0 +1,107 @@
+
+header {
+	height: 114px;
+	padding: 15px 0;
+}
+
+footer {
+    height: 234px;
+    margin-top: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $bg-body;
+    font-family: $font-primary;
+    font-size: $fs;
+    color: $color;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li {
+    &::marker {
+        color: $primary-color;
+    } 
+
+}
+ul {
+    li {
+        position: relative;
+        &:note([class]) {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background-color: $primary-color;
+                border-radius: 50%;
+                left: -19px;
+                top: 6px;
+               }
+        }
+    }
+}
+
+.btn {
+    font-size: 15px;
+    border-radius: 90px;
+    font-weight: 600;
+    padding: 12px 26px;
+    line-height: 146%;
+    border: 1px solid $primary-color;
+    &:hover {
+        text-decoration: none;
+    }
+
+&.btn-primary {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: transparent;
+       
+    }   
+}
+&.btn-secondary {
+    background-color: transparent;
+  
+    &:hover {
+        background-color: $primary-color;
+        
+    }
+}
+&.btn-primary,
+&.btn-secondary{
+    &:active{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+}
+&.btn-lg {
+    padding: 19px 24px;
+    font-size: 16px;
+}
+}
+
+img {
+padding-left: 46px;
+height: 27px;
+width: 27px;
+}
+
+
+
