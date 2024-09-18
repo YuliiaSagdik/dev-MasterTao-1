@@ -1,2 +1,9 @@
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
+    .custom-navbar{
+        .nav-item {
+        padding: 12px 23px;
+        margin-top: 3px;
+        color: #ffff;
+}
+ }
 }
