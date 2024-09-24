@@ -1,6 +1,6 @@
 @media screen and (max-width: 991.99px) {
     .container {
-        padding: 0 20px;
+        padding: 0 12px;
     }
     .navbar-brand {
         img {
@@ -8,7 +8,7 @@
         }
     }
     .custom-navbar {
-        padding: 13px 0 24p;
+        padding: 13px 0;
 
         .navbar-collapse {
             text-align: center;
@@ -44,6 +44,36 @@
         }
       } 
     } 
+    .banner {
+       .swiper-slide {
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background:#04051199;
+            z-index: -1;
+        }
+       } 
+         .container {
+           align-items: center;
+           text-align: center;
+           min-height: 649px;
+           padding: 0 12px 140px;
+      }
+      &-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+        max-width: 295px;
+      }
+      &-description {
+        font-size: 16px;
+        margin-bottom: 18px;
+        max-width: 260px;
+      }
+   }
 }
 
 

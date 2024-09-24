@@ -13,10 +13,19 @@ const swiper = new Swiper('.swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      enabled: false,
     },
   
     // And if we need scrollbar
-   
+    breakpoints: {
+      // when window width is >= 992px
+      992: {
+        navigation: {
+          enabled: true,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
+    }
   }); 
+  
