@@ -28,4 +28,13 @@ const swiper = new Swiper('.swiper', {
       },
     }
   }); 
-  
+  const typeFile = document.querySelectorAll('.custom-file')
+  typeFile.forEach(item =>{
+    item.addEventListener('change', () => {
+      const fileName = item.closest('.input-box').querySelector('.file-name')
+      fileName.innerHTML = item.files[0].name;
+
+    } )
+   } )
+
+ 

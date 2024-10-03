@@ -1,3 +1,41 @@
 @media screen and (max-width: 767px) {
-
+    .calculation-form {
+        margin: 0 auto;
+        padding: 52px 30px 34px;
+        .btn {
+          width: 100%;
+          padding: 23px 17px 17px 31px;
+          display: flex;
+          justify-content: space-between;
+          img {
+            margin: initial;
+          }
+        }
+       }
+    
+       .calculation-img {
+        display: none;
+       }
+    
+       .form-row {
+        flex-direction: column;
+        gap: 0;
+       }
+       .control-box{
+       &:first-child {
+            margin-top: 6px;
+        }
+    }
+        .control-box{
+        &:last-child {
+          margin-top: 18px;
+      }
+    }
+      input{
+      &[type=file] {
+      + label {
+        margin-top: 32px;
+    }
+}
+}
 }
