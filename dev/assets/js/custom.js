@@ -1,22 +1,16 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+const swiper = new Swiper('#banner-slider', {
     loop: true,
     speed: 2000,
     avtoplay: {
         delay:3000,
     },
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
-    // Navigation arrows
     navigation: {
       enabled: false,
     },
-  
-    // And if we need scrollbar
     breakpoints: {
       // when window width is >= 992px
       992: {
@@ -36,5 +30,27 @@ const swiper = new Swiper('.swiper', {
 
     } )
    } )
-
- 
+   const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+   const swiperAdvantages = new Swiper('#advantages',{ 
+   loop: true, 
+   simulateTouch: true,
+   slidesPerview: 1,
+   pagination: {
+     el: '.swiper-pagination', 
+     clickable: true, 
+     enabled: true,
+  },
+   breakpoints: {
+    1025: {
+      spaceBetween: 0, 
+      loop: false, 
+      slidesPerGroup: advantagesSlide, 
+      simulateTouch: false,
+      pagination: {
+        enabled: false, 
+        el: '.swiper-pagination',
+       
+       }
+    }
+}
+});

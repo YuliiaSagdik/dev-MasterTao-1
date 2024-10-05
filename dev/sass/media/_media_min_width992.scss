@@ -33,5 +33,18 @@
             }
            }
        }
+    }
+       #advantages {
+        padding-top: 17px;
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            width: calc(100% + 28px);
+            margin: 0 -12px;
+        }
+        .advantage {
+            width: 100%;
+            max-width: 25%;
+            padding: 0 22px;
+       }
 }
 }
