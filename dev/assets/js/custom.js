@@ -30,7 +30,7 @@ const swiper = new Swiper('#banner-slider', {
 
     } )
    } )
-   const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+   const advantagesSlideLength = document.querySelectorAll('#advantages .swiper-slide')
    const swiperAdvantages = new Swiper('#advantages',{ 
    loop: true, 
    simulateTouch: true,
@@ -44,7 +44,7 @@ const swiper = new Swiper('#banner-slider', {
     1025: {
       spaceBetween: 0, 
       loop: false, 
-      slidesPerGroup: advantagesSlide, 
+      slidesPerGroup: advantagesSlideLength, 
       simulateTouch: false,
       pagination: {
         enabled: false, 

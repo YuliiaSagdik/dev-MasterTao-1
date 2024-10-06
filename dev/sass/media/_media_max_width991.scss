@@ -45,6 +45,7 @@
       } 
     } 
     .banner {
+      padding-bottom: 0;
        .swiper-slide {
         &:before {
             position: absolute;
@@ -91,7 +92,11 @@
    .calculation-form {
     margin: 0 auto;
     }
-   
+   .calculation-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 21px;
+   }
    .calculation-img {
     display: none;
    }
@@ -107,7 +112,17 @@
     }
     
    }
-  }
-
-
-
+   .calculation {
+    padding: 55px 0 60px;
+   }
+   .advantages {
+    padding-bottom: 67px;
+    .swiper {
+        padding-top: 16px;
+        overflow: visible;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+      bottom: -8px;  
+}
+}
+}

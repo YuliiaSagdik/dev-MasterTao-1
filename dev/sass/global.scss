@@ -113,11 +113,12 @@ img {
     border: 2px solid #fff;
     opacity: 1;
     background: transparent;
+    &.swiper-pagination-bullet-active {
+        background-color: #fff;
+      }
   }
   
-  .swiper-pagination-bullet-active {
-    background-color: #fff;
-  }
+
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -129,12 +130,7 @@ img {
     line-height: 0;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    bottom: 43px;
-}
+
 .template-title {
     text-align: center;
     position: relative;
