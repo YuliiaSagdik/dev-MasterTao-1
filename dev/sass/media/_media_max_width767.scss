@@ -1,7 +1,16 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 861.99px){
+  .slider-template{
+    max-width: 360px;
+    padding-bottom: 50px;
+    ~ .swiper-navigation {
+      max-width: 552px;
+}
+  }
+}
+@media screen and (max-width: 767.99px) {
     .calculation-form {
         margin: 0 auto;
-        padding: 75px 38px 30px;
+        padding: 75px 36px 30px;
         .btn {
           width: 100%;
           padding: 23px 17px 17px 31px;
@@ -37,5 +46,21 @@
         margin-top: 32px;
     }
 }
+}
+.swiper-navigation{
+  display: none;
+}
+.card {
+  padding: 0 21px 26px;
+  .btn-row {
+    .btn {
+      max-width: 138px;
+      padding: 13px 0px;
+    }
+  } 
+}
+.slider-template {
+  max-width: 335px;
+  margin-bottom: 50px;
 }
 }

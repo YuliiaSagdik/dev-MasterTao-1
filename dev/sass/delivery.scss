@@ -1,0 +1,120 @@
+.delivery{
+    position: relative;
+    .template-title{
+        margin-bottom: 3px;
+    }
+  
+}
+
+.swiper-button-prev-unique,
+.swiper-button-next-unique {
+color: #fff;
+width: 46px;
+
+&:hover {
+    color: $secondary-color;
+}
+&.swiper-button-prev {
+    left: 0;
+}
+&.swiper-button-next{
+    right: 0;
+}
+}
+
+.swiper-navigation {
+    position: absolute;
+    bottom: 311px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-width: 1323px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.card {
+    background-color: $bg-section;
+    border: none;
+    color: #fff;
+    padding: 0 20px 27px;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 482px;
+    max-width: 360px;
+    
+    .img-box {
+        margin: 0 -20px 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        img {
+            height: 229px;
+            object-fit: contain;
+        }
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 9px;
+    }
+    &-option {
+        display: flex;
+        padding: 0px;
+        margin: 0 0 27px 0;
+        gap: 28px;
+        justify-content: center;
+    }
+    .btn-row {
+        display: flex;
+        gap: 14px;
+        margin-top: auto;
+        .btn {
+        width: 50%;  
+        padding: 13px 15px;   
+        }
+    }
+
+}
+.img-fluid {
+   max-width: 100%; 
+   height: auto;
+}
+
+.option-item {
+    list-style: none;
+    img {
+    margin-right: 9px;
+    }
+}
+.card-price {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+    text-align: center;
+    color: #a3a3a3;
+    margin-bottom: 25px;
+    b {
+    font-weight: 700;
+    font-size: 45px;
+    color: #fff;
+    margin: 0 -3px;
+    }
+    span {
+     &:last-child {
+     color:#fff;
+          }
+         }
+        }
+    .slider-template {
+      .swiper-pagination {
+      bottom: 10px;
+               }
+        }
+       
+       
+ 
+    
