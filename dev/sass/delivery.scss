@@ -1,13 +1,13 @@
-.delivery{
+.delivery {
     position: relative;
+   
     .template-title{
-        margin-bottom: 3px;
+        margin-bottom: 15px;
     }
-  
 }
 
-.swiper-button-prev-unique,
-.swiper-button-next-unique {
+[class*="swiper-button-prev-unique"],
+[class*="swiper-button-next-unique"] {
 color: #fff;
 width: 46px;
 
@@ -43,7 +43,7 @@ width: 46px;
     overflow: hidden;
     min-height: 482px;
     max-width: 360px;
-    
+    position: relative;
     .img-box {
         margin: 0 -20px 29px;
         display: flex;
@@ -114,6 +114,10 @@ width: 46px;
       bottom: 10px;
                }
         }
+        
+        
+       
+        
        
        
  

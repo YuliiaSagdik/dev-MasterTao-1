@@ -58,7 +58,7 @@ const swiperBanner = new Swiper('#banner-slider', {
 }
 });
 
-const swiperSliderTemplate = new Swiper('.slider-template', {
+const swiperDelivery = new Swiper('#delivery', {
   speed: 400,
   loop: true,
   slidesPerView: 1,
@@ -69,8 +69,8 @@ const swiperSliderTemplate = new Swiper('.slider-template', {
   },
   navigation: {
       enabled: false,
-      nextEl: '.swiper-button-next-unique',
-      prevEl: '.swiper-button-prev-unique'
+      nextEl: '.swiper-button-next-unique-0',
+      prevEl: '.swiper-button-prev-unique-0'
   },
 
   breakpoints: {
@@ -78,8 +78,8 @@ const swiperSliderTemplate = new Swiper('.slider-template', {
       slidesPerView: 1,
       navigation: {
           enabled: true,
-          nextEl: '.swiper-button-next-unique',
-          prevEl: '.swiper-button-prev-unique'
+          nextEl: '.swiper-button-next-unique-0',
+          prevEl: '.swiper-button-prev-unique-0'
       },
      },
       861: {
@@ -87,8 +87,8 @@ const swiperSliderTemplate = new Swiper('.slider-template', {
           spaceBetween: 30,
           navigation: {
               enabled: true,
-              nextEl: '.swiper-button-next-unique',
-              prevEl: '.swiper-button-prev-unique'
+              nextEl: '.swiper-button-next-unique-0',
+              prevEl: '.swiper-button-prev-unique-0'
           },
           pagination: {
             enabled: false,
@@ -100,8 +100,59 @@ const swiperSliderTemplate = new Swiper('.slider-template', {
           spaceBetween: 30,
           navigation: {
               enabled: true,
-              nextEl: '.swiper-button-next-unique',
-              prevEl: '.swiper-button-prev-unique'
+              nextEl: '.swiper-button-next-unique-0',
+              prevEl: '.swiper-button-prev-unique-0'
+          },
+          pagination: {
+            enabled: false,
+        },
+      },
+  },
+});
+const swiperServices = new Swiper('#services', {
+  speed: 400,
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+      enabled: true,   
+  },
+  navigation: {
+      enabled: false,
+      nextEl: '.swiper-button-next-unique-1',
+      prevEl: '.swiper-button-prev-unique-1'
+  },
+
+  breakpoints: {
+     767: {
+      slidesPerView: 1,
+      navigation: {
+          enabled: true,
+          nextEl: '.swiper-button-next-unique-1',
+          prevEl: '.swiper-button-prev-unique-1'
+      },
+     },
+      861: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+              enabled: true,
+              nextEl: '.swiper-button-next-unique-1',
+              prevEl: '.swiper-button-prev-unique-1'
+          },
+          pagination: {
+            enabled: false,
+        },
+      },
+
+      1252: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+              enabled: true,
+              nextEl: '.swiper-button-next-unique-1',
+              prevEl: '.swiper-button-prev-unique-1'
           },
           pagination: {
             enabled: false,
