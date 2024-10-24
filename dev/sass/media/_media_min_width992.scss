@@ -47,4 +47,20 @@
             padding: 0 22px;
        }
 }
+.about {
+    .container-about {
+        position: relative;
+    }
+        .img-about {
+            position: absolute;
+            left: 600px;
+            bottom: 11px;
+            display: block;
+        }
+        .about-text{
+            box-sizing: content-box;
+            min-width: 555px;
+            width: 555px;
+                }
+      }
 }

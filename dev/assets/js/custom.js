@@ -160,3 +160,66 @@ const swiperServices = new Swiper('#services', {
       },
   },
 });
+
+swiperTemplate.forEach((item,index) => {
+
+  new Swiper(item, {
+  speed: 400,
+  loop: true,
+  slidesPerView: 1,
+
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+      enabled: true,   
+  },
+  navigation: {
+      enabled: false,
+      nextEl: '.swiper-button-next-unique-' + index,
+      prevEl: '.swiper-button-prev-unique-' + index
+  },
+
+  breakpoints: {
+     767: {
+      slidesPerView: 1,
+      navigation: {
+          enabled: true,
+          nextEl: '.swiper-button-next-unique-' + index,
+          prevEl: '.swiper-button-prev-unique-' + index
+      },
+      pagination: {
+        enabled: true,
+    },
+     },
+      861: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+              enabled: true,
+              nextEl: '.swiper-button-next-unique-' + index,
+              prevEl: '.swiper-button-prev-unique-' + index
+          },
+          pagination: {
+            enabled: false,
+        },
+      },
+
+      1252: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+              enabled: true,
+              nextEl: '.swiper-button-next-unique-' + index,
+              prevEl: '.swiper-button-prev-unique-' + index
+          },
+          pagination: {
+            enabled: false,
+        },
+      },
+  },
+})
+});
+
+
+
+  

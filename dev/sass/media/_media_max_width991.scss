@@ -79,6 +79,7 @@
    section {
     padding: 0 0 100px;
     &.bg-section {
+      padding-top: 54px;
       padding-left: 0;
       padding-right: 0;
   
@@ -132,5 +133,14 @@
 }
 .delivery {
   padding: 54px 0 0 0;
+}
+.services {
+  padding: 57px 80px 7px 0;
+}
+.about {
+  .img-about {
+    max-height: 284px;
+    margin: 0 auto;
+  }
 }
 }
